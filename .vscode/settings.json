@@ -65,7 +65,10 @@
         "__tree": "cpp",
         "list": "cpp",
         "deque": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "__bits": "cpp",
+        "stack": "cpp",
+        "iomanip": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

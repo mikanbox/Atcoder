@@ -4,7 +4,6 @@ file=$1
 fname=$(basename $file)
 objfile=`echo $fname | sed 's/\.[^\.]*$//'`
 
-echo "$file"
 # ディレクトリに移動
 cd $(dirname $file)
 
@@ -14,10 +13,12 @@ if [ -e ./a.out ]; then
   rm ./a.out
 fi
 
+echo "Inputed URL :"$str
+echo "Filename    :"$file
 
-g++ -o $file  -std=c++11
+g++ $file -std=c++11
 
 rm -r ./test
 oj dl $str
-
++
 oj t --jobs 3 -c "./a.out" 
