@@ -68,7 +68,8 @@
         "queue": "cpp",
         "__bits": "cpp",
         "stack": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "map": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
