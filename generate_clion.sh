@@ -1,12 +1,34 @@
 #!/bin/sh
 name=$1
+echo "./Contest/$name/.idea/"
+
 mkdir ./Contest/$name
 touch ./Contest/$name/a.cpp
-touch ./Contest/$name/b.cpp
-touch ./Contest/$name/c.cpp
-touch ./Contest/$name/d.cpp
 
-mkdir ./Contest/$name/.idea
+echo """#include <bits/stdc++.h>
+using namespace std;
+#define ll int64_t
+#define ALL(a) \
+    (a) c;     \
+    .begin(), (a).end()
+
+const ll mod = 1000000007;
+const ll LINF = 1e13;
+const ll LLINF = 1e18;
+const ll ALPHABET = 26;
+
+
+int main()
+{
+    ll n;
+    cin >> n;
+
+    cout << ans << endl;
+
+}""">> ./Contest/$name/a.cpp
+
+
+mkdir ./Contest/$name/.idea/
 touch ./Contest/$name/.idea/workspace.xml
 echo """<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
@@ -74,7 +96,7 @@ echo """<?xml version="1.0" encoding="UTF-8"?>
     <option name="version" value="3" />
   </component>
 </project>
-""" >> .idea/workspace.xml
+""" >> ./Contest/$name/.idea/workspace.xml
 
 export PATH=$PATH:/Applications/CLion.app/Contents/MacOS
 clion ./Contest/$name
